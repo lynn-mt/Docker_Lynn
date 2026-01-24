@@ -5,8 +5,17 @@ import pandas as pd
 from sqlalchemy import create_engine
 from tqdm.auto import tqdm
 
+year = 2021
+month = 1
 
+pg_user = "root"
+pg_password = "root"
+pg_host = "localhost"
+pg_port = 5432
+pg_db = "ny_taxi"
 
+table_name = "yellow_taxi_data"
+chunksize = 100000
 
 prefix = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow"
 url = f"{prefix}/yellow_tripdata_{year}-{month:02d}.csv.gz"
