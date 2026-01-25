@@ -58,3 +58,6 @@ WHERE t.lpep_pickup_datetime >= '2025-11-01'
   AND z_pick."Zone" = 'East Harlem North'
 ORDER BY t.tip_amount DESC
 LIMIT 1;
+
+
+Question 7.  terraform init, terraform apply -auto-approve, terraform destroy
